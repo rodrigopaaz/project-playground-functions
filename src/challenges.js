@@ -116,12 +116,15 @@ function techList(array, name) {
     return 'Vazio!';
   } 
     for (let index = 0; index < 5; index += 1) {
-      resultado = array[index];
       let Object = { name:name, tech:array[index] };
       techs.push(Object);
       
     }
-  return techs
+    techs = techs.sort(function (a, b) { return (a.tech > b.tech) ? 1 : ((b.tech > a.tech) ? -1 : 0); });
+    return techs
+
+
+
 }
   
 
