@@ -117,13 +117,12 @@ function techList(array, name) {
   } 
     for (let index = 0; index < 5; index += 1) {
       resultado = array[index];
-      let Object = { "name":name,"tech":array[index] };
+      let Object = { name:name, tech:array[index] };
       techs.push(Object);
-      return techs;
       
     }
-    
-  }
+  return techs
+}
   
 
 
