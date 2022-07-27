@@ -52,15 +52,21 @@ function triangleCheck(lineA, lineB, lineC) {
 // Desafio 13
 function hydrate(string) {
   const replaced = string.replace(/\D/g, ''); 
-  number=replaced
-  number = number.split();
+  let number=replaced;
+  number = number.split('');
   let soma = 0;
+  if (number.length !== 1){
   for (index in number){
-    soma += number[index]
+    soma = soma + Number(number[index])
   }
-return soma + ' copo de água'
+return soma + ' copos de água'}
 
+for (index in number){
+  soma = soma + Number(number[index])
 }
+return soma + ' copo de água'}
+
+
 
 module.exports = {
   generatePhoneNumber,
